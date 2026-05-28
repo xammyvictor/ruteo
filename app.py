@@ -387,7 +387,7 @@ with tab_resultados:
                         for i, nombre in enumerate(nombres_nodos):
                             offset_y = 0.003 if i != 0 else -0.005
                             offset_x = 0.001
-                            etiqueta = f\"{nombre}\\n(+{demandas[i]} kg)\" if i != 0 else \"🏬 CEDI (Origen)\"
+                            etiqueta = f"{nombre}\n(+{demandas[i]} kg)" if i != 0 else "🏬 CEDI (Origen)"
                             ax.text(coordenadas[i][1] + offset_x, coordenadas[i][0] + offset_y, etiqueta,
                                      fontsize=8, weight='bold' if i==0 else 'normal',
                                      bbox=dict(facecolor='white', alpha=0.8, edgecolor='none', boxstyle='round,pad=0.2'),
